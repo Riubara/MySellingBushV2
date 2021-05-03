@@ -1,0 +1,302 @@
+[
+    {
+        "id": 1,
+        "categoryTitle": "Fleur",
+        "subCategoy": [
+            {
+                "id": 1,
+                "subCategoryTitle": "Roses",
+                "products": [
+                    {
+                        "id": 1,
+                        "productName": "Rose blanche",
+                        "sciName": "Rosa x alba",
+                        "type": "Vivace",
+                        "catégory": 1,
+                        "subCategory": 1,
+                        "price": 23,
+                        "nbFlower": "2 - 7",
+                        "heigh": "1.50m – 2.5m",
+                        "width": "1.5m – 2.5m",
+                        "temperature": "35° - 40°",
+                        "typeFloor": "Tout type",
+                        "color": "Blanc",
+                        "typeFlowering": "non remontant",
+                        "timeFlowering": "été",
+                        "description": "..."
+                    },
+                    {
+                        "id": 2,
+                        "productName": "Rose de Damas"
+                    },
+                    {
+                        "id": 3,
+                        "productName": "Rose écossaise"
+                    },
+                    {
+                        "id": 4,
+                        "productName": "Rose des haies"
+                    },
+                    {
+                        "id": 5,
+                        "productName": "Rose de Lady Banks"
+                    },
+                    {
+                        "id": 6,
+                        "productName": "Rose de tous les mois"
+                    },
+                    {
+                        "id": 7,
+                        "productName": "Rose mousseuse"
+                    },
+                    {
+                        "id": 8,
+                        "productName": "Rose à cent feuilles"
+                    },
+                    {
+                        "id": 9,
+                        "productName": "Rose confédérée"
+                    },
+                    {
+                        "id": 10,
+                        "productName": "Rose de Jéricho"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "subCategoryTitle": "Aconite",
+                "products": [
+                    {
+                        "id": 11,
+                        "productName": "Aconit anthore"
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "subCategoryTitle": "Allium",
+                "products": [
+                    {
+                        "id": 12,
+                        "productName": "Allium ampeloprasum"
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "subCategoryTitle": "Anemone",
+                "products": [
+                    {
+                        "id": 13,
+                        "productName": "Anemone hortensis"
+                    }
+                ]
+            },
+            {
+                "id": 5,
+                "subCategoryTitle": "Coleus",
+                "products": [
+                    {
+                        "id": 14,
+                        "productName": "Coleus abyssinicus"
+                    }
+                ]
+            },
+            {
+                "id": 6,
+                "subCategoryTitle": "Echinacea",
+                "products": [
+                    {
+                        "id": 15,
+                        "productName": "Echinacea pallida"
+                    }
+                ]
+            },
+            {
+                "id": 7,
+                "subCategoryTitle": "Angelica",
+                "products": [
+                    {
+                        "id": 16,
+                        "productName": "Angelica alpina"
+                    }
+                ]
+            },
+            {
+                "id": 8,
+                "subCategoryTitle": "Rhododendron",
+                "products": [
+                    {
+                        "id": 17,
+                        "productName": "Rhododendron luteum"
+                    }
+                ]
+            },
+            {
+                "id": 9,
+                "subCategoryTitle": "Bellflower",
+                "products": [
+                    {
+                        "id": 18,
+                        "productName": "Campanula Bellflower"
+                    }
+                ]
+            },
+            {
+                "id": 10,
+                "subCategoryTitle": "Crocus",
+                "products": [
+                    {
+                        "id": 19,
+                        "productName": "Crocus etruscus parl"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "categoryTitle": "Bambous",
+        "subCategoy": [
+            {
+                "id": 11,
+                "subCategoryTitle": "Borinda",
+                "products": [
+                    {
+                        "id": 20,
+                        "productName": "Borinda albocerea"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "categoryTitle": "Arbustes",
+        "subCategoy": [
+            {
+                "id": 12,
+                "subCategoryTitle": "Photinia",
+                "products": [
+                    {
+                        "id": 21,
+                        "productName": "Photinia pink marble cassini"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "categoryTitle": "Arbres fruitiers",
+        "subCategoy": [
+            {
+                "id": 13,
+                "subCategoryTitle": "Agrumes",
+                "products": [
+                    {
+                        "id": 22,
+                        "productName": "Kumquat"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "categoryTitle": "Légumes",
+        "subCategoy": [
+            {
+                "id": 14,
+                "subCategoryTitle": "Radis",
+                "products": [
+                    {
+                        "id": 23,
+                        "productName": "Radis Gaudris"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "categoryTitle": "Conifères",
+        "subCategoy": [
+            {
+                "id": 15,
+                "subCategoryTitle": "Conifères nains",
+                "products": [
+                    {
+                        "id": 24,
+                        "productName": "Pain nain Pumilio"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "categoryTitle": "Plantes grimpantes",
+        "subCategoy": [
+            {
+                "id": 16,
+                "subCategoryTitle": "Lierre",
+                "products": [
+                    {
+                        "id": 25,
+                        "productName": "Lierre d’Irlande"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "categoryTitle": "Arbres",
+        "subCategoy": [
+            {
+                "id": 17,
+                "subCategoryTitle": "Grands arbres",
+                "products": [
+                    {
+                        "id": 26,
+                        "productName": "Charme commun"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "categoryTitle": "Outils",
+        "subCategoy": [
+            {
+                "id": 18,
+                "subCategoryTitle": "Outils à moteur",
+                "products": [
+                    {
+                        "id": 27,
+                        "productName": "Tondeuse"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "categoryTitle": "Pots",
+        "subCategoy": [
+            {
+                "id": 19,
+                "subCategoryTitle": "Pots en fibre de terre",
+                "products": [
+                    {
+                        "id": 28,
+                        "productName": "Pots Clayfibre L80-H40"
+                    }
+                ]
+            }
+        ]
+    }
+]
