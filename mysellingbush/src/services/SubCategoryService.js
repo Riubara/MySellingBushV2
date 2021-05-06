@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-class CategoryService {
+class SubCategoryService {
     constructor() {
         this.axios = axios.create({
             baseURL: 'http://localhost:3000'
@@ -20,4 +20,4 @@ class CategoryService {
 }
 
 
-export default new CategoryService();
+export default new SubCategoryService();

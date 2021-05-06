@@ -12,8 +12,9 @@ const routes = [
         component: AppCategoryView
     },
     {
-        path: '/subcategory',
+        path: '/subcategory/:id',
         name: 'subcategory',
+        props: true,
         component: AppSubCategoryView
     }
 ]

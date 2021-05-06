@@ -38,14 +38,14 @@ export default {
     };
   },
   async mounted() {
-    SubCategoryService.getAll()
+    SubCategoryService.getById(this.$route.params.id)
       .then((res) => {
         if (res) {
           this.subcategories = res;
         }
       })
       .catch((err) => console.log(err));
-    ProductService.getAll()
+    ProductService.getByIdCat(this.$route.params.id)
       .then((res) => {
         if (res) {
           this.products = res;

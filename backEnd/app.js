@@ -71,4 +71,16 @@ app.get('/products', (req, res) => {
     });
 });
 
+app.get('/products/:id', (req, res) => {
+    const id = req.params.id;
+    database.query('SELECT * FROM Produit INNER JOIN subcategory ON produit.IDSubCategory = subcategory.ID WHERE subcategory.CategoryID = ' + id, (err, result) => {
+        if (err) throw err;
+        const categories = JSON.stringify(result);
+        return res.end(categories, function (err) {
+            if (err) throw err;
+        });
+    });
+
+});
+
 module.exports = app;

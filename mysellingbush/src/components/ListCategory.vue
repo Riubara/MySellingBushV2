@@ -1,7 +1,7 @@
 <template>
   <div>
     <td v-for="json in myJson" :key="json.id">
-      <button @click="$router.push('/subcategory')">{{ json.CategoryTitle }}</button>
+      <button @click="$router.push('/subcategory/'+json.ID)">{{ json.CategoryTitle }}</button>
     </td>
   </div>
 </template>

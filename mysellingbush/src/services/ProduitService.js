@@ -12,6 +12,11 @@ class ProductService {
         return responce.data;
     }
 
+    async getByIdCat(id) {
+        let responce = await this.axios.get('/products/' + id)
+        return responce.data;
+    }
+
 }
 
 
