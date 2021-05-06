@@ -2,6 +2,8 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import AppCategoryView from '@/components/AppCategoryView';
 import AppSubCategoryView from '@/components/AppSubCategoryView';
+import AppProduitView from '@/components/AppProduitView';
+import AppLoginView from '@/components/AppLoginView';
 
 Vue.use(VueRouter);
 
@@ -16,6 +18,18 @@ const routes = [
         name: 'subcategory',
         props: true,
         component: AppSubCategoryView
+    },
+    {
+        path: '/product/:id',
+        name: 'product',
+        props: true,
+        component: AppProduitView
+    },
+    {
+        path: '/login',
+        name: 'login',
+        props: true,
+        component: AppLoginView
     }
 ]
 

@@ -2,6 +2,7 @@ USE MySellingBush;
 DROP TABLE IF EXISTS Produit;
 DROP TABLE IF EXISTS SubCategory;
 DROP TABLE IF EXISTS Category;
+DROP TABLE IF EXISTS UserMSB;
 CREATE TABLE Category(
  ID INT NOT NULL AUTO_INCREMENT,
  CategoryTitle VARCHAR(50) NOT NULL, PRIMARY KEY(ID)
@@ -74,3 +75,11 @@ INSERT INTO Produit(Product_Name, IDSubCategory) VALUES
 ("Kumquat", 13), ("Radis Gaudris", 14), ("Pain nain Pumilio", 15),
 ("Liere d Irland", 16), ("Charme commun", 17),
 ("Tondeuse", 18), ("Pots Clayfibre L80-H40", 19);
+
+CREATE TABLE UserMSB(
+ ID INT NOT NULL AUTO_INCREMENT,
+ Login VARCHAR(50) NOT NULL,
+ Pass VARCHAR(50) NOT NULL, 
+ PRIMARY KEY(ID)
+ );
+ 

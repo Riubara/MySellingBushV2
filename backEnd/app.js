@@ -10,6 +10,7 @@ var corsOption = {
 }
 
 app.use(cors(corsOption));
+app.use(express.json());
 
 
 app.get('/categories', (req, res) => {
@@ -80,7 +81,29 @@ app.get('/products/:id', (req, res) => {
             if (err) throw err;
         });
     });
+});
 
+app.get('/product/:id', (req, res) => {
+    const id = req.params.id;
+    database.query('SELECT * FROM Produit WHERE ID = ' + id, (err, result) => {
+        if (err) throw err;
+        const categories = JSON.stringify(result);
+        return res.end(categories, function (err) {
+            if (err) throw err;
+        });
+    });
+});
+
+app.post('/login', (req, res) => {
+    const data = req.body;
+    console.log(data);
+    database.query('INSERT INTO UserMSB( Login , Pass) VALUES ("' + data.user + '", "' + data.pass + '")', (err, result) => {
+        if (err) throw err;
+        const categories = JSON.stringify(result);
+        return res.end(categories, function (err) {
+            if (err) throw err;
+        });
+    });
 });
 
 module.exports = app;

@@ -1,14 +1,14 @@
 <template>
   <div class="product">
-      <h4>{{name}}</h4>
-      <button>buy</button>
+    <h4>{{ name }}</h4>
+    <button @click="$router.push('/product/' + ID)">buy</button>
   </div>
 </template>
 
 <script>
 export default {
   name: "ListCategory",
-  props: ["name"],
+  props: ["name", "ID"],
 };
 </script>
 
@@ -17,6 +17,5 @@ export default {
   border: solid;
   border-color: black;
   margin-top: 10px;
-
 }
 </style>

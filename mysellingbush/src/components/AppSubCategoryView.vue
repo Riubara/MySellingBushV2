@@ -14,6 +14,7 @@
         v-for="prod in products"
         :key="prod.ID"
         v-bind:name="prod.Product_Name"
+        v-bind:ID="prod.ID"
       ></ProductCase>
     </div>
   </div>
@@ -52,6 +53,7 @@ export default {
         }
       })
       .catch((err) => console.log(err));
+      console.log(this.products)
   },
 };
 </script>

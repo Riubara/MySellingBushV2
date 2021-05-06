@@ -3,7 +3,7 @@
     <div class="navbarTop">
       <h1 chass="test">MySellingBush</h1>
       <button>panier</button>
-      <button>profil</button>
+      <button @click="$router.push('/login')">profil</button>
     </div>
 
     <div>
