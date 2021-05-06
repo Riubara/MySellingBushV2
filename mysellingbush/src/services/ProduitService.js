@@ -8,7 +8,7 @@ class ProductService {
     }
 
     async getAll() {
-        let responce = await this.axios.get('/products',{});
+        let responce = await this.axios.get('/products', {});
         return responce.data;
     }
 

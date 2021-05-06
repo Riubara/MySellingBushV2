@@ -8,7 +8,7 @@ class CategoryService {
     }
 
     async getAll() {
-        let responce = await this.axios.get('/categories',{});
+        let responce = await this.axios.get('/categories', {});
         return responce.data;
     }
 

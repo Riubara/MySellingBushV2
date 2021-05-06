@@ -8,7 +8,7 @@ class SubCategoryService {
     }
 
     async getAll() {
-        let responce = await this.axios.get('/subcategories',{});
+        let responce = await this.axios.get('/subcategories', {});
         return responce.data;
     }
 

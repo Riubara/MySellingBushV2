@@ -7,8 +7,6 @@
     </div>
 
     <div>
-      
-
       <div>
         <router-view></router-view>
       </div>
@@ -20,10 +18,7 @@
 //import ListAllSubCategory from "./components/ListAllSubCategory";
 //import SubCategoryService from "@/services/SubCategoryService";
 
-
-export default {
- 
-};
+export default {};
 </script>
 
 <style>
