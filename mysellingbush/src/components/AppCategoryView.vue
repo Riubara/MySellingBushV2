@@ -1,30 +1,39 @@
 <template>
-  <div id="app">
-    <div class="navbarTop">
-      <h1 chass="test">MySellingBush</h1>
-      <button>panier</button>
-      <button>profil</button>
-    </div>
-
+  <div id="appCategory">
     <div>
       <div style="align-items: center">
         <h2>Choose a category</h2>
       </div>
 
       <div>
-        <ListAllCategory></ListAllCategory>
+        <ListAllCategory v-bind:myJson="categories"></ListAllCategory>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import ListAllCategory from './components/ListAllCategory';
+import ListAllCategory from "./ListAllCategory";
+import CategoryService from "@/services/CategoryService";
 
 export default {
   name: "App",
   components: {
-    ListAllCategory
+    ListAllCategory,
+  },
+  data() {
+    return {
+      categories: [],
+    };
+  },
+  async mounted() {
+    CategoryService.getAll()
+      .then((res) => {
+        if (res) {
+          this.categories = res;
+        }
+      })
+      .catch((err) => console.log(err));
   },
 };
 </script>
@@ -40,13 +49,10 @@ export default {
 }
 
 body {
-  background-color: #C3B8AA;
+  background-color: #c3b8aa;
 }
 
 .navbarTop {
-    background-color: #859276;
-
+  background-color: #859276;
 }
-
-
 </style>

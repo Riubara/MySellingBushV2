@@ -8,12 +8,12 @@ class CategoryService {
     }
 
     async getAll() {
-        let responce = await this.axios.get('/categories',{});
+        let responce = await this.axios.get('/subcategories',{});
         return responce.data;
     }
 
     async getById(id) {
-        let responce = await this.axios.get('/category/' + id)
+        let responce = await this.axios.get('/subcategory/' + id)
         return responce.data;
     }
 

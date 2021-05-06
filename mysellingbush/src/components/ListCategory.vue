@@ -1,14 +1,15 @@
 <template>
   <div>
-    <td v-for="json in myJson" :key="json.id"><button>{{json.categoryTitle}}</button></td>
+    <td v-for="json in myJson" :key="json.id">
+      <button @click="$router.push('/subcategory')">{{ json.CategoryTitle }}</button>
+    </td>
   </div>
 </template>
 <script>
-
 export default {
-  props: ['myJson'],
-  created () {
+  props: ["myJson"],
+  created() {
     console.log(this.myJson);
-  }
-}
+  },
+};
 </script>

@@ -1,18 +1,17 @@
 <template>
   <tr>
-    <td><button>1</button></td>
-    <td><button>2</button></td>
-    <td><button>3</button></td>
-    <td><button>4</button></td>
-    <td><button>5</button></td>
-    <td><button>6</button></td>
-    <td><button>7</button></td>
+    <td v-for="json in myJson" :key="json.id">
+      <button>{{ json.SubCategoryTitle }}</button>
+    </td>
   </tr>
 </template>
 
 <script>
 export default {
   name: "ListCategory",
-  //props: ['itemCategory']
+  props: ["myJson"],
+  created() {
+    console.log(this.myJson)
+  }
 };
 </script>

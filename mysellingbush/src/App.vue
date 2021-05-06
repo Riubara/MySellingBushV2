@@ -7,42 +7,22 @@
     </div>
 
     <div>
-      <div style="align-items: center">
-        <h2>Choose a category</h2>
-      </div>
+      
 
       <div>
-        <ListAllCategory v-bind:myJson="myJson"></ListAllCategory>
+        <router-view></router-view>
       </div>
-      
     </div>
   </div>
 </template>
 
 <script>
-import ListAllCategory from "./components/ListAllCategory";
-import json from "../public/data";
-import CategoryService from "./services/CategoryService"
+//import ListAllSubCategory from "./components/ListAllSubCategory";
+//import SubCategoryService from "@/services/SubCategoryService";
+
 
 export default {
-  name: "App",
-  components: {
-    ListAllCategory,
-  },
-  data() {
-    return {
-      myJson: json,
-    };
-  },
-  async mounted() {
-    CategoryService.getAll()
-    .them((res) => {
-      if (res) {
-        //this.categories = res.map((object));
-      }
-    })
-    .catch((err) => console.log(err));
-  }
+ 
 };
 </script>
 

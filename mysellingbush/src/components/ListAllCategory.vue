@@ -15,8 +15,6 @@ export default {
     ListCategory,
   },
   props: ['myJson'],
-  computed: {
-
-  }
+  
 };
 </script>

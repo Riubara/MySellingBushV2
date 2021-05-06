@@ -1,30 +1,57 @@
 <template>
-  <div id="app">
-    <div class="navbarTop">
-      <h1 chass="test">MySellingBush</h1>
-      <button>panier</button>
-      <button>profil</button>
-    </div>
-
+  <div id="appSubCategory">
     <div>
       <div style="align-items: center">
         <h2>Choose a sub-category</h2>
       </div>
 
       <div>
-        <ListAllSubCategory></ListAllSubCategory>
+        <ListAllSubCategory v-bind:myJson="subcategories"></ListAllSubCategory>
       </div>
+    </div>
+    <div>
+      <ProductCase
+        v-for="prod in products"
+        :key="prod.ID"
+        v-bind:name="prod.Product_Name"
+      ></ProductCase>
     </div>
   </div>
 </template>
 
 <script>
-import ListAllSubCategory from './components/ListAllSubCategory';
+import ListAllSubCategory from "./ListAllSubCategory";
+import SubCategoryService from "../services/SubCategoryService";
+import ProductService from "../services/ProduitService";
+import ProductCase from "./ProductCase";
 
 export default {
   name: "App",
   components: {
-    ListAllSubCategory
+    ListAllSubCategory,
+    ProductCase,
+  },
+  data() {
+    return {
+      subcategories: [],
+      products: [],
+    };
+  },
+  async mounted() {
+    SubCategoryService.getAll()
+      .then((res) => {
+        if (res) {
+          this.subcategories = res;
+        }
+      })
+      .catch((err) => console.log(err));
+    ProductService.getAll()
+      .then((res) => {
+        if (res) {
+          this.products = res;
+        }
+      })
+      .catch((err) => console.log(err));
   },
 };
 </script>
@@ -40,13 +67,10 @@ export default {
 }
 
 body {
-  background-color: #C3B8AA;
+  background-color: #c3b8aa;
 }
 
 .navbarTop {
-    background-color: #859276;
-
+  background-color: #859276;
 }
-
-
 </style>

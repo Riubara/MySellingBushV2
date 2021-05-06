@@ -1,7 +1,7 @@
 <template>
   <div>
     <table>
-      <ListSubCategory></ListSubCategory>
+      <ListSubCategory v-bind:myJson="myJson"></ListSubCategory>
     </table>
   </div>
 </template>
@@ -14,6 +14,6 @@ export default {
   components: {
     ListSubCategory,
   },
-  
+  props: ["myJson"],
 };
 </script>
